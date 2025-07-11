@@ -2,8 +2,7 @@
 // (c) minimalist, vanilla JS
 
 document.addEventListener('DOMContentLoaded', function() {
-  // WebP desteğini kontrol et
-  checkWebpSupport();
+  // Tüm görseller WebP formatında olduğu için WebP desteği kontrolü kaldırıldı
   
   // Custom file input filename display
   const fileInput = document.getElementById('attachment');
@@ -67,103 +66,116 @@ document.addEventListener('DOMContentLoaded', function() {
   initCarousel();
 });
 
-// WebP desteğini kontrol et
-function checkWebpSupport() {
-  const webpSupport = localStorage.getItem('webpSupport');
-  
-  if (webpSupport === null) {
-    const webpTest = new Image();
-    webpTest.onload = function() {
-      localStorage.setItem('webpSupport', 'true');
-      document.documentElement.classList.add('webp');
-    };
-    webpTest.onerror = function() {
-      localStorage.setItem('webpSupport', 'false');
-      document.documentElement.classList.add('no-webp');
-    };
-    webpTest.src = 'data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=';
-  } else if (webpSupport === 'true') {
-    document.documentElement.classList.add('webp');
-  } else {
-    document.documentElement.classList.add('no-webp');
-  }
-}
+// WebP fonksiyonu kaldırıldı - tüm görseller WebP formatında
 
 // Carousel setup - Performans iyileştirmesi için optimize edildi
 function initCarousel() {
   const carouselTrack = document.querySelector('.carousel-track');
   if (!carouselTrack) return;
   
-  // WebP desteği kontrolü
-  const isWebpSupported = document.documentElement.classList.contains('webp');
+  // Tüm görseller WebP formatında olduğu için WebP desteği kontrolü kaldırıldı
   
-  // Carousel images - bu dummy resimleri kendi resimlerinizle değiştirin
-  // Daha fazla veya daha az resim ekleyebilirsiniz
+  // Carousel images - Tüm görseller WebP formatında
   const carouselImages = [
     {
-      src: 'assets/carousel-images/project1.jpg',
-      webp: 'assets/carousel-images/project1.webp',
+      src: 'assets/carousel-images/project1.webp',
       alt: 'Proje İzolasyon Çalışması 1'
     },
     {
-      src: 'assets/carousel-images/project2.jpg',
-      webp: 'assets/carousel-images/project2.webp',
+      src: 'assets/carousel-images/project2.webp',
       alt: 'Proje İzolasyon Çalışması 2'
     },
     {
-      src: 'assets/carousel-images/project3.jpg',
-      webp: 'assets/carousel-images/project3.webp',
+      src: 'assets/carousel-images/project3.webp',
       alt: 'Proje İzolasyon Çalışması 3'
     },
     {
-      src: 'assets/carousel-images/project4.jpg',
-      webp: 'assets/carousel-images/project4.webp',
+      src: 'assets/carousel-images/project4.webp',
       alt: 'Proje İzolasyon Çalışması 4'
     },
     {
-      src: 'assets/carousel-images/project5.jpg',
-      webp: 'assets/carousel-images/project5.webp',
+      src: 'assets/carousel-images/project5.webp',
       alt: 'Proje İzolasyon Çalışması 5'
     },
     {
-      src: 'assets/carousel-images/project6.jpg',
-      webp: 'assets/carousel-images/project6.webp',
+      src: 'assets/carousel-images/project6.webp',
       alt: 'Proje İzolasyon Çalışması 6'
     },
     {
-      src: 'assets/carousel-images/project7.jpg',
-      webp: 'assets/carousel-images/project7.webp',
+      src: 'assets/carousel-images/project7.webp',
       alt: 'Proje İzolasyon Çalışması 7'
     },
     {
-      src: 'assets/carousel-images/project8.jpg',
-      webp: 'assets/carousel-images/project8.webp',
+      src: 'assets/carousel-images/project8.webp',
       alt: 'Proje İzolasyon Çalışması 8'
     },
     {
-      src: 'assets/carousel-images/project9.jpg',
-      webp: 'assets/carousel-images/project9.webp',
+      src: 'assets/carousel-images/project9.webp',
       alt: 'Proje İzolasyon Çalışması 9'
     },
     {
-      src: 'assets/carousel-images/project10.jpg',
-      webp: 'assets/carousel-images/project10.webp',
+      src: 'assets/carousel-images/project10.webp',
       alt: 'Proje İzolasyon Çalışması 10'
     },
     {
-      src: 'assets/carousel-images/project11.jpg',
-      webp: 'assets/carousel-images/project11.webp',
+      src: 'assets/carousel-images/project11.webp',
       alt: 'Proje İzolasyon Çalışması 11'
     },
     {
-      src: 'assets/carousel-images/project12.jpg',
-      webp: 'assets/carousel-images/project12.webp',
+      src: 'assets/carousel-images/project12.webp',
       alt: 'Proje İzolasyon Çalışması 12'
     },
     {
-      src: 'assets/carousel-images/project13.jpg',
-      webp: 'assets/carousel-images/project13.webp',
+      src: 'assets/carousel-images/project13.webp',
       alt: 'Proje İzolasyon Çalışması 13'
+    },
+    {
+      src: 'assets/carousel-images/project14.webp',
+      alt: 'Proje Dokümantasyonu 14'
+    },
+    {
+      src: 'assets/carousel-images/project15.webp',
+      alt: 'Proje Dokümantasyonu 15'
+    },
+    {
+      src: 'assets/carousel-images/project16.webp',
+      alt: 'Proje Dokümantasyonu 16'
+    },
+    {
+      src: 'assets/carousel-images/project17.webp',
+      alt: 'Proje Dokümantasyonu 17'
+    },
+    {
+      src: 'assets/carousel-images/project18.webp',
+      alt: 'Proje Dokümantasyonu 18'
+    },
+    {
+      src: 'assets/carousel-images/project19.webp',
+      alt: 'Proje Dokümantasyonu 19'
+    },
+    {
+      src: 'assets/carousel-images/project20.webp',
+      alt: 'Proje Dokümantasyonu 20'
+    },
+    {
+      src: 'assets/carousel-images/project21.webp',
+      alt: 'Proje Dokümantasyonu 21'
+    },
+    {
+      src: 'assets/carousel-images/project22.webp',
+      alt: 'Proje Dokümantasyonu 22'
+    },
+    {
+      src: 'assets/carousel-images/project23.webp',
+      alt: 'Proje Dokümantasyonu 23'
+    },
+    {
+      src: 'assets/carousel-images/project24.webp',
+      alt: 'Proje Dokümantasyonu 24'
+    },
+    {
+      src: 'assets/carousel-images/project25.webp',
+      alt: 'Proje Dokümantasyonu 25'
     }
   ];
   
@@ -179,6 +191,7 @@ function initCarousel() {
     const slide = document.createElement('div');
     slide.className = 'carousel-slide';
     
+    // Tüm dosyalar için aynı kod (resim veya PDF placeholder)
     const img = document.createElement('img');
     // Lazy loading kullan
     img.loading = 'lazy';
@@ -199,10 +212,11 @@ function initCarousel() {
       console.log('Görsel yüklenemedi: ' + image.src);
     };
     
-    // WebP desteği varsa WebP formatını kullan
-    img.src = isWebpSupported && image.webp ? image.webp : image.src;
+    // Tüm görseller WebP formatında
+    img.src = image.src;
     
     slide.appendChild(img);
+    
     fragment.appendChild(slide);
     
     // Dot oluştur

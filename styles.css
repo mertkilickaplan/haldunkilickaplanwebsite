@@ -729,6 +729,8 @@ footer {
   }
 }
 
+/* PDF preview container stilleri kaldırıldı - artık sadece WebP görselleri kullanıyoruz */
+
 /* Yeni Hakkımızda bölümü stilleri */
 .hero-header {
   position: relative;
