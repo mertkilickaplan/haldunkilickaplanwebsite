@@ -806,6 +806,8 @@ footer {
 .carousel-slide {
   cursor: pointer;
   transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .carousel-slide:hover {
@@ -818,6 +820,85 @@ footer {
 
 .carousel-slide:hover img {
   opacity: 0.9;
+}
+
+/* Carousel görsel notları */
+.carousel-image-note {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.3;
+  max-width: calc(100% - 16px);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.carousel-slide:hover .carousel-image-note {
+  background: rgba(0, 0, 0, 0.9);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Modal görsel notları */
+.modal-image-note {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  max-width: calc(100% - 30px);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  z-index: 10001;
+}
+
+@media (max-width: 768px) {
+  .carousel-image-note {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    bottom: 4px;
+    left: 4px;
+    border-radius: 4px;
+  }
+  
+  .modal-image-note {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    bottom: 10px;
+    left: 10px;
+    max-width: calc(100% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-image-note {
+    font-size: 0.7rem;
+    padding: 3px 6px;
+  }
+  
+  .modal-image-note {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+    bottom: 8px;
+    left: 8px;
+  }
 }
 
 /* Modal responsive */

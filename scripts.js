@@ -111,139 +111,173 @@ function initCarousel() {
   const carouselImages = [
     {
       src: 'assets/carousel-images/project1.webp',
-      alt: 'Proje İzolasyon Çalışması 1'
+      alt: 'Proje İzolasyon Çalışması 1',
+      note: 'Teras Su İzolasyonu - Ankara'
     },
     {
       src: 'assets/carousel-images/project2.webp',
-      alt: 'Proje İzolasyon Çalışması 2'
+      alt: 'Proje İzolasyon Çalışması 2',
+      note: 'Çatı Yalıtım Uygulaması - İstanbul'
     },
     {
       src: 'assets/carousel-images/project3.webp',
-      alt: 'Proje İzolasyon Çalışması 3'
+      alt: 'Proje İzolasyon Çalışması 3',
+      note: 'Temel İzolasyon Çalışması - İzmir'
     },
     {
       src: 'assets/carousel-images/project4.webp',
-      alt: 'Proje İzolasyon Çalışması 4'
+      alt: 'Proje İzolasyon Çalışması 4',
+      note: 'Soğuk Çatı Yalıtımı - Bursa'
     },
     {
       src: 'assets/carousel-images/project5.webp',
-      alt: 'Proje İzolasyon Çalışması 5'
+      alt: 'Proje İzolasyon Çalışması 5',
+      note: 'Islak Mekan İzolasyonu - Antalya'
     },
     {
       src: 'assets/carousel-images/project6.webp',
-      alt: 'Proje İzolasyon Çalışması 6'
+      alt: 'Proje İzolasyon Çalışması 6',
+      note: 'Akustik İzolasyon - Ankara'
     },
     {
       src: 'assets/carousel-images/project7.webp',
-      alt: 'Proje İzolasyon Çalışması 7'
+      alt: 'Proje İzolasyon Çalışması 7',
+      note: 'Çatı Kaplama Çalışması - Konya'
     },
     {
       src: 'assets/carousel-images/project8.webp',
-      alt: 'Proje İzolasyon Çalışması 8'
+      alt: 'Proje İzolasyon Çalışması 8',
+      note: 'Zemin İzolasyon - Eskişehir'
     },
     {
       src: 'assets/carousel-images/project9.webp',
-      alt: 'Proje İzolasyon Çalışması 9'
+      alt: 'Proje İzolasyon Çalışması 9',
+      note: 'Mantolama Uygulaması - Adana'
     },
     {
       src: 'assets/carousel-images/project10.webp',
-      alt: 'Proje İzolasyon Çalışması 10'
+      alt: 'Proje İzolasyon Çalışması 10',
+      note: 'Derz Dolgu Çalışması - Mersin'
     },
     {
       src: 'assets/carousel-images/project11.webp',
-      alt: 'Proje İzolasyon Çalışması 11'
+      alt: 'Proje İzolasyon Çalışması 11',
+      note: 'Teras Yalıtım - Samsun'
     },
     {
       src: 'assets/carousel-images/project12.webp',
-      alt: 'Proje İzolasyon Çalışması 12'
+      alt: 'Proje İzolasyon Çalışması 12',
+      note: 'Su İzolasyonu - Trabzon'
     },
     {
       src: 'assets/carousel-images/project13.webp',
-      alt: 'Proje İzolasyon Çalışması 13'
+      alt: 'Proje İzolasyon Çalışması 13',
+      note: 'Çatı Onarım - Gaziantep'
     },
     {
       src: 'assets/carousel-images/project14.webp',
-      alt: 'Proje Dokümantasyonu 14'
+      alt: 'Proje Dokümantasyonu 14',
+      note: 'Isı Yalıtım Projesi - Kayseri'
     },
     {
       src: 'assets/carousel-images/project15.webp',
-      alt: 'Proje Dokümantasyonu 15'
+      alt: 'Proje Dokümantasyonu 15',
+      note: 'Temel İzolasyon - Malatya'
     },
     {
       src: 'assets/carousel-images/project16.webp',
-      alt: 'Proje Dokümantasyonu 16'
+      alt: 'Proje Dokümantasyonu 16',
+      note: 'Ses İzolasyonu - Diyarbakır'
     },
     {
       src: 'assets/carousel-images/project17.webp',
-      alt: 'Proje Dokümantasyonu 17'
+      alt: 'Proje Dokümantasyonu 17',
+      note: 'Çatı Kaplama - Erzurum'
     },
     {
       src: 'assets/carousel-images/project18.webp',
-      alt: 'Proje Dokümantasyonu 18'
+      alt: 'Proje Dokümantasyonu 18',
+      note: 'Mantolama - Van'
     },
     {
       src: 'assets/carousel-images/project19.webp',
-      alt: 'Proje Dokümantasyonu 19'
+      alt: 'Proje Dokümantasyonu 19',
+      note: 'Zemin Kaplaması - Şanlıurfa'
     },
     {
       src: 'assets/carousel-images/project20.webp',
-      alt: 'Proje Dokümantasyonu 20'
+      alt: 'Proje Dokümantasyonu 20',
+      note: 'Derz Onarım - Elazığ'
     },
     {
       src: 'assets/carousel-images/project21.webp',
-      alt: 'Proje Dokümantasyonu 21'
+      alt: 'Proje Dokümantasyonu 21',
+      note: 'Teras İzolasyon - Hatay'
     },
     {
       src: 'assets/carousel-images/project22.webp',
-      alt: 'Proje Dokümantasyonu 22'
+      alt: 'Proje Dokümantasyonu 22',
+      note: 'Çatı Yalıtım - Kahramanmaraş'
     },
     {
       src: 'assets/carousel-images/project23.webp',
-      alt: 'Proje Dokümantasyonu 23'
+      alt: 'Proje Dokümantasyonu 23',
+      note: 'Su İzolasyonu - Ordu'
     },
     {
       src: 'assets/carousel-images/project24.webp',
-      alt: 'Proje Dokümantasyonu 24'
+      alt: 'Proje Dokümantasyonu 24',
+      note: 'Akustik Çözüm - Rize'
     },
     {
       src: 'assets/carousel-images/project25.webp',
-      alt: 'Proje Dokümantasyonu 25'
+      alt: 'Proje Dokümantasyonu 25',
+      note: 'Temel Yalıtım - Artvin'
     },
     {
       src: 'assets/carousel-images/project26.webp',
-      alt: 'Proje Dokümantasyonu 26'
+      alt: 'Proje Dokümantasyonu 26',
+      note: 'Çatı Kaplama - Giresun'
     },
     {
       src: 'assets/carousel-images/project27.webp',
-      alt: 'Proje Dokümantasyonu 27'
+      alt: 'Proje Dokümantasyonu 27',
+      note: 'Mantolama - Bayburt'
     },
     {
       src: 'assets/carousel-images/project28.webp',
-      alt: 'Proje Dokümantasyonu 28'
+      alt: 'Proje Dokümantasyonu 28',
+      note: 'Zemin İzolasyon - Gümüşhane'
     },
     {
       src: 'assets/carousel-images/project29.webp',
-      alt: 'Proje Dokümantasyonu 29'
+      alt: 'Proje Dokümantasyonu 29',
+      note: 'Derz Dolgu - Tunceli'
     },
     {
       src: 'assets/carousel-images/project30.webp',
-      alt: 'Proje Dokümantasyonu 30'
+      alt: 'Proje Dokümantasyonu 30',
+      note: 'Isı Yalıtım - Bingöl'
     },
     {
       src: 'assets/carousel-images/project31.webp',
-      alt: 'Proje Dokümantasyonu 31'
+      alt: 'Proje Dokümantasyonu 31',
+      note: 'Ses İzolasyon - Muş'
     },
     {
       src: 'assets/carousel-images/project32.webp',
-      alt: 'Proje Dokümantasyonu 32'
+      alt: 'Proje Dokümantasyonu 32',
+      note: 'Teras Onarım - Bitlis'
     },
     {
       src: 'assets/carousel-images/project33.webp',
-      alt: 'Proje Dokümantasyonu 33'
+      alt: 'Proje Dokümantasyonu 33',
+      note: 'Çatı Yenileme - Siirt'
     },
     {
       src: 'assets/carousel-images/project34.webp',
-      alt: 'Proje Dokümantasyonu 34'
+      alt: 'Proje Dokümantasyonu 34',
+      note: 'Su Yalıtım - Şırnak'
     }
   ];
   
@@ -285,10 +319,18 @@ function initCarousel() {
     
     // Slide'ı tıklanabilir hale getir
     slide.addEventListener('click', function() {
-      openModal(image.src, image.alt);
+      openModal(image.src, image.alt, image.note);
     });
     
     slide.appendChild(img);
+    
+    // Görsel notu ekle
+    if (image.note) {
+      const noteElement = document.createElement('div');
+      noteElement.className = 'carousel-image-note';
+      noteElement.textContent = image.note;
+      slide.appendChild(noteElement);
+    }
     
     fragment.appendChild(slide);
     
@@ -442,7 +484,7 @@ function initCarousel() {
   updateCarousel();
   
   // Modal açma fonksiyonu
-  window.openModal = function(imageSrc, imageAlt) {
+  window.openModal = function(imageSrc, imageAlt, imageNote) {
     // Modal durumunu güncelle
     isModalOpen = true;
     
@@ -454,6 +496,7 @@ function initCarousel() {
     const modal = document.getElementById('imageModal');
     const modalImage = modal.querySelector('.modal-image');
     const modalTitle = modal.querySelector('#modal-title');
+    const modalContent = modal.querySelector('.modal-content');
     
     modalImage.src = imageSrc;
     modalImage.alt = imageAlt || 'Proje Görseli';
@@ -461,6 +504,20 @@ function initCarousel() {
     // SEO için title güncelle
     if (modalTitle) {
       modalTitle.textContent = imageAlt || 'Proje Görseli Büyütülmüş Görünüm';
+    }
+    
+    // Eski modal notunu temizle
+    const existingNote = modalContent.querySelector('.modal-image-note');
+    if (existingNote) {
+      existingNote.remove();
+    }
+    
+    // Yeni modal notu ekle
+    if (imageNote) {
+      const modalNoteElement = document.createElement('div');
+      modalNoteElement.className = 'modal-image-note';
+      modalNoteElement.textContent = imageNote;
+      modalContent.appendChild(modalNoteElement);
     }
     
     modal.classList.add('show');
@@ -489,6 +546,7 @@ function initCarousel() {
   window.closeModal = function() {
     const modal = document.getElementById('imageModal');
     const modalImage = modal.querySelector('.modal-image');
+    const modalContent = modal.querySelector('.modal-content');
     
     modal.classList.remove('show');
     modal.setAttribute('aria-hidden', 'true');
@@ -499,11 +557,17 @@ function initCarousel() {
     // Modal durumunu güncelle
     isModalOpen = false;
     
-    // Görsel kaynağını temizle - performans için
+    // Görsel kaynağını ve notları temizle - performans için
     setTimeout(() => {
       if (modalImage) {
         modalImage.src = '';
         modalImage.alt = '';
+      }
+      
+      // Modal notunu temizle
+      const modalNote = modalContent.querySelector('.modal-image-note');
+      if (modalNote) {
+        modalNote.remove();
       }
     }, 300);
     
