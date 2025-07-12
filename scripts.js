@@ -208,6 +208,42 @@ function initCarousel() {
     {
       src: 'assets/carousel-images/project25.webp',
       alt: 'Proje Dokümantasyonu 25'
+    },
+    {
+      src: 'assets/carousel-images/project26.webp',
+      alt: 'Proje Dokümantasyonu 26'
+    },
+    {
+      src: 'assets/carousel-images/project27.webp',
+      alt: 'Proje Dokümantasyonu 27'
+    },
+    {
+      src: 'assets/carousel-images/project28.webp',
+      alt: 'Proje Dokümantasyonu 28'
+    },
+    {
+      src: 'assets/carousel-images/project29.webp',
+      alt: 'Proje Dokümantasyonu 29'
+    },
+    {
+      src: 'assets/carousel-images/project30.webp',
+      alt: 'Proje Dokümantasyonu 30'
+    },
+    {
+      src: 'assets/carousel-images/project31.webp',
+      alt: 'Proje Dokümantasyonu 31'
+    },
+    {
+      src: 'assets/carousel-images/project32.webp',
+      alt: 'Proje Dokümantasyonu 32'
+    },
+    {
+      src: 'assets/carousel-images/project33.webp',
+      alt: 'Proje Dokümantasyonu 33'
+    },
+    {
+      src: 'assets/carousel-images/project34.webp',
+      alt: 'Proje Dokümantasyonu 34'
     }
   ];
   
