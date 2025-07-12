@@ -64,9 +64,41 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Carousel functionality
   initCarousel();
+  
+  // Modal functionality
+  initModal();
 });
 
 // WebP fonksiyonu kaldırıldı - tüm görseller WebP formatında
+
+// Modal initialization function
+function initModal() {
+  const modal = document.getElementById('imageModal');
+  const closeBtn = modal.querySelector('.modal-close');
+  
+  // Çarpı butonuna tıklama
+  closeBtn.addEventListener('click', closeModal);
+  
+  // Modal dışına tıklama
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+  
+  // ESC tuşuna basma
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && modal.classList.contains('show')) {
+      closeModal();
+    }
+  });
+}
+
+// Global carousel variables
+let autoplayInterval;
+let currentSlide = 0;
+let isAnimating = false;
+let isModalOpen = false;
 
 // Carousel setup - Performans iyileştirmesi için optimize edildi
 function initCarousel() {
@@ -215,6 +247,11 @@ function initCarousel() {
     // Tüm görseller WebP formatında
     img.src = image.src;
     
+    // Slide'ı tıklanabilir hale getir
+    slide.addEventListener('click', function() {
+      openModal(image.src, image.alt);
+    });
+    
     slide.appendChild(img);
     
     fragment.appendChild(slide);
@@ -247,9 +284,7 @@ function initCarousel() {
   const prevButton = document.querySelector('.prev-button');
   const nextButton = document.querySelector('.next-button');
   
-  let currentSlide = 0;
-  let autoplayInterval;
-  let isAnimating = false;
+  // Global değişkenler artık yukarıda tanımlandı
   
   // Carousel'i güncelle - Throttling eklenmiş
   function updateCarousel() {
@@ -296,8 +331,17 @@ function initCarousel() {
   // Otoplay'i durdur ve yeniden başlat
   function resetAutoplay() {
     clearInterval(autoplayInterval);
-    startAutoplay();
+    // Modal açık değilse otomatik geçişi başlat
+    if (!isModalOpen) {
+      startAutoplay();
+    }
   }
+  
+  // Global fonksiyonlar - modal'dan erişilebilir
+  window.startCarouselAutoplay = startAutoplay;
+  window.stopCarouselAutoplay = function() {
+    clearInterval(autoplayInterval);
+  };
   
   // Buton event listener'ları - Passive true ekle
   if (prevButton) prevButton.addEventListener('click', prevSlide, { passive: true });
@@ -313,14 +357,18 @@ function initCarousel() {
   // Dokunma başlangıcı
   carouselTrack.addEventListener('touchstart', (e) => {
     touchStartX = e.changedTouches[0].screenX;
-    clearInterval(autoplayInterval); // Dokunduğunda otomatik oynatmayı durdur
+    if (!isModalOpen) {
+      clearInterval(autoplayInterval); // Dokunduğunda otomatik oynatmayı durdur
+    }
   }, { passive: true });
   
   // Dokunma bitişi
   carouselTrack.addEventListener('touchend', (e) => {
     touchEndX = e.changedTouches[0].screenX;
     handleSwipe();
-    startAutoplay(); // Dokunma bittikten sonra otomatik oynatmayı başlat
+    if (!isModalOpen) {
+      startAutoplay(); // Dokunma bittikten sonra otomatik oynatmayı başlat
+    }
   }, { passive: true });
   
   // Kaydırma işlemini ele al
@@ -341,15 +389,99 @@ function initCarousel() {
   const carouselContainer = document.querySelector('.carousel-container');
   if (carouselContainer) {
     carouselContainer.addEventListener('mouseenter', () => {
-      clearInterval(autoplayInterval);
+      if (!isModalOpen) {
+        clearInterval(autoplayInterval);
+      }
     }, { passive: true });
     
     // Carousel'den çıkınca otomatik oynatmayı devam ettir
     carouselContainer.addEventListener('mouseleave', () => {
-      startAutoplay();
+      if (!isModalOpen) {
+        startAutoplay();
+      }
     }, { passive: true });
   }
   
   // İlk slide'ı göster
   updateCarousel();
+  
+  // Modal açma fonksiyonu
+  window.openModal = function(imageSrc, imageAlt) {
+    // Modal durumunu güncelle
+    isModalOpen = true;
+    
+    // Otomatik oynatmayı durdur
+    if (window.stopCarouselAutoplay) {
+      window.stopCarouselAutoplay();
+    }
+    
+    const modal = document.getElementById('imageModal');
+    const modalImage = modal.querySelector('.modal-image');
+    const modalTitle = modal.querySelector('#modal-title');
+    
+    modalImage.src = imageSrc;
+    modalImage.alt = imageAlt || 'Proje Görseli';
+    
+    // SEO için title güncelle
+    if (modalTitle) {
+      modalTitle.textContent = imageAlt || 'Proje Görseli Büyütülmüş Görünüm';
+    }
+    
+    modal.classList.add('show');
+    modal.setAttribute('aria-hidden', 'false');
+    
+    // Body scroll'unu engelle
+    document.body.style.overflow = 'hidden';
+    
+    // Focus yönetimi - erişilebilirlik için
+    const closeButton = modal.querySelector('.modal-close');
+    if (closeButton) {
+      closeButton.focus();
+    }
+    
+    // Google Analytics event (eğer varsa)
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'image_view', {
+        event_category: 'Gallery',
+        event_label: imageAlt || 'Proje Görseli',
+        value: 1
+      });
+    }
+  };
+  
+  // Modal kapama fonksiyonu
+  window.closeModal = function() {
+    const modal = document.getElementById('imageModal');
+    const modalImage = modal.querySelector('.modal-image');
+    
+    modal.classList.remove('show');
+    modal.setAttribute('aria-hidden', 'true');
+    
+    // Body scroll'unu tekrar etkinleştir
+    document.body.style.overflow = 'auto';
+    
+    // Modal durumunu güncelle
+    isModalOpen = false;
+    
+    // Görsel kaynağını temizle - performans için
+    setTimeout(() => {
+      if (modalImage) {
+        modalImage.src = '';
+        modalImage.alt = '';
+      }
+    }, 300);
+    
+    // Otomatik oynatmayı tekrar başlat
+    setTimeout(() => {
+      if (window.startCarouselAutoplay) {
+        window.startCarouselAutoplay();
+      }
+    }, 100);
+    
+    // Focus'u carousel'e geri döndür - erişilebilirlik için
+    const carousel = document.querySelector('.carousel-container');
+    if (carousel) {
+      carousel.focus();
+    }
+  };
 } 

@@ -102,7 +102,18 @@
           "addressCountry": "TR"
         },
         "areaServed": "Türkiye",
-        "priceRange": "$$"
+        "priceRange": "$$",
+        "serviceType": ["Su İzolasyonu", "Isı Yalıtımı", "Ses İzolasyonu", "Çatı Yalıtımı", "Temel İzolasyonu"]
+      },
+      {
+        "@type": "ImageGallery",
+        "name": "Haldun Kılıçkaplan Proje Galerisi",
+        "description": "İzolasyon ve yalıtım projelerimizden örnek görseller",
+        "url": "https://haldunkilickaplan.com/#gallery",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Haldun Kılıçkaplan"
+        }
       }
     ]
   }
@@ -121,7 +132,7 @@
           </div>
         </div>
         
-        <p class="hero-description">Şirketimiz, ses, ısı ve su izolasyonu konularında profesyonel çözümler sunmaktadır. <strong>40 yılı aşkın saha tecrübesi</strong> ile üç ana hizmet modelinde hizmet sunuyoruz</p>
+        <p class="hero-description">Tecrübemiz, ses, ısı ve su izolasyonu konularında profesyonel çözümler sunmaktadır. 40 yılı aşkın saha tecrübesi ile üç ana hizmet modelinde hizmet sunuyoruz</p>
         <ul class="hero-services-list">
           <li><span class="service-bullet">•</span> Danışmanlık</li>
           <li><span class="service-bullet">•</span> Kontrollük</li>
@@ -524,7 +535,7 @@
   
   <section id="gallery">
     <h2>Projelerimizden Kareler</h2>
-    <div class="carousel-container">
+    <div class="carousel-container" tabindex="0" role="region" aria-label="Proje Görselleri Galeri">
       <div class="carousel-wrapper">
         <div class="carousel-track">
           <!-- Carousel içeriği JavaScript ile doldurulacak -->
@@ -547,6 +558,15 @@
       </div>
     </div>
   </section>
+  
+  <!-- Modal for enlarged images -->
+  <div id="imageModal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Resmi Kapat" type="button">&times;</button>
+      <img class="modal-image" src="" alt="" loading="lazy">
+      <div id="modal-title" class="sr-only">Proje Görseli Büyütülmüş Görünüm</div>
+    </div>
+  </div>
   
   <section id="contact">
     <h2>İletişim</h2>
