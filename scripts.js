@@ -111,173 +111,173 @@ function initCarousel() {
   const carouselImages = [
     {
       src: 'assets/carousel-images/project1.webp',
-      alt: 'Proje İzolasyon Çalışması 1',
-      note: 'Teras Su İzolasyonu - Ankara'
+      alt: 'Aşkaabat Olimpik Stadyum - Türkmenistan',
+      note: 'Aşkaabat Olimpik Stadyum / Türkmenistan'
     },
     {
       src: 'assets/carousel-images/project2.webp',
-      alt: 'Proje İzolasyon Çalışması 2',
-      note: 'Çatı Yalıtım Uygulaması - İstanbul'
+      alt: 'Aşkaabat Olimpik Stadyum - Türkmenistan',
+      note: 'Aşkaabat Olimpik Stadyum / Türkmenistan'
     },
     {
       src: 'assets/carousel-images/project3.webp',
-      alt: 'Proje İzolasyon Çalışması 3',
-      note: 'Temel İzolasyon Çalışması - İzmir'
+      alt: 'Aşkaabat Olimpik Stadyum - Türkmenistan',
+      note: 'Aşkaabat Olimpik Stadyum / Türkmenistan'
     },
     {
       src: 'assets/carousel-images/project4.webp',
-      alt: 'Proje İzolasyon Çalışması 4',
-      note: 'Soğuk Çatı Yalıtımı - Bursa'
+      alt: 'Milli Sazlı Drama Tiyatro - Aşkaabat, Türkmenistan',
+      note: 'Milli Sazlı Drama Tiyatro / Aşkaabat, Türkmenistan'
     },
     {
       src: 'assets/carousel-images/project5.webp',
-      alt: 'Proje İzolasyon Çalışması 5',
-      note: 'Islak Mekan İzolasyonu - Antalya'
+      alt: 'Milli Sazlı Drama Tiyatro - Aşkaabat, Türkmenistan',
+      note: 'Milli Sazlı Drama Tiyatro / Aşkaabat, Türkmenistan'
     },
     {
       src: 'assets/carousel-images/project6.webp',
-      alt: 'Proje İzolasyon Çalışması 6',
-      note: 'Akustik İzolasyon - Ankara'
+      alt: 'Milli Sazlı Drama Tiyatro - Aşkaabat, Türkmenistan',
+      note: 'Milli Sazlı Drama Tiyatro / Aşkaabat, Türkmenistan'
     },
     {
       src: 'assets/carousel-images/project7.webp',
-      alt: 'Proje İzolasyon Çalışması 7',
-      note: 'Çatı Kaplama Çalışması - Konya'
+      alt: 'Tümay Koleji - İncek, Ankara',
+      note: 'Tümay Koleji / İncek, Ankara'
     },
     {
       src: 'assets/carousel-images/project8.webp',
-      alt: 'Proje İzolasyon Çalışması 8',
-      note: 'Zemin İzolasyon - Eskişehir'
+      alt: 'Milas Havaalanı',
+      note: 'Milas Havaalanı'
     },
     {
       src: 'assets/carousel-images/project9.webp',
-      alt: 'Proje İzolasyon Çalışması 9',
-      note: 'Mantolama Uygulaması - Adana'
+      alt: 'Hoca Ahmet Yesevi Üniversitesi - Kazakistan',
+      note: 'Hoca Ahmet Yesevi Üniversitesi / Kazakistan'
     },
     {
       src: 'assets/carousel-images/project10.webp',
-      alt: 'Proje İzolasyon Çalışması 10',
-      note: 'Derz Dolgu Çalışması - Mersin'
+      alt: 'FTZ Alışveriş Merkezi Havuzları - Keçiören, Ankara',
+      note: 'FTZ Alışveriş Merkezi Havuzları / Keçiören, Ankara'
     },
     {
       src: 'assets/carousel-images/project11.webp',
-      alt: 'Proje İzolasyon Çalışması 11',
-      note: 'Teras Yalıtım - Samsun'
+      alt: 'FTZ Alışveriş Merkezi Havuzları - Keçiören, Ankara',
+      note: 'FTZ Alışveriş Merkezi Havuzları / Keçiören, Ankara'
     },
     {
       src: 'assets/carousel-images/project12.webp',
-      alt: 'Proje İzolasyon Çalışması 12',
-      note: 'Su İzolasyonu - Trabzon'
+      alt: 'Tubitak Merkez Bina - Kavaklıdere, Ankara',
+      note: 'Tubitak Merkez Bina / Kavaklıdere, Ankara'
     },
     {
       src: 'assets/carousel-images/project13.webp',
-      alt: 'Proje İzolasyon Çalışması 13',
-      note: 'Çatı Onarım - Gaziantep'
+      alt: 'Tubitak Merkez Bina - Kavaklıdere, Ankara',
+      note: 'Tubitak Merkez Bina / Kavaklıdere, Ankara'
     },
     {
       src: 'assets/carousel-images/project14.webp',
-      alt: 'Proje Dokümantasyonu 14',
-      note: 'Isı Yalıtım Projesi - Kayseri'
+      alt: 'Tubitak Merkez Bina - Kavaklıdere, Ankara',
+      note: 'Tubitak Merkez Bina / Kavaklıdere, Ankara'
     },
     {
       src: 'assets/carousel-images/project15.webp',
-      alt: 'Proje Dokümantasyonu 15',
-      note: 'Temel İzolasyon - Malatya'
+      alt: 'MNG İş Merkezi - Gop, Ankara',
+      note: 'MNG İş Merkezi / Gop, Ankara'
     },
     {
       src: 'assets/carousel-images/project16.webp',
-      alt: 'Proje Dokümantasyonu 16',
-      note: 'Ses İzolasyonu - Diyarbakır'
+      alt: 'MNG İş Merkezi - Gop, Ankara',
+      note: 'MNG İş Merkezi / Gop, Ankara'
     },
     {
       src: 'assets/carousel-images/project17.webp',
-      alt: 'Proje Dokümantasyonu 17',
-      note: 'Çatı Kaplama - Erzurum'
+      alt: 'A.Ü Ziraat Fakültesi, Fermantasyon Teknolojileri Binası - Ankara',
+      note: 'A.Ü Ziraat Fakültesi, Fermantasyon Teknolojileri Binası / Ankara'
     },
     {
       src: 'assets/carousel-images/project18.webp',
-      alt: 'Proje Dokümantasyonu 18',
-      note: 'Mantolama - Van'
+      alt: 'A.Ü Ziraat Fakültesi, Et Mamülleri Binası - Ankara',
+      note: 'A.Ü Ziraat Fakültesi, Et Mamülleri Binası / Ankara'
     },
     {
       src: 'assets/carousel-images/project19.webp',
-      alt: 'Proje Dokümantasyonu 19',
-      note: 'Zemin Kaplaması - Şanlıurfa'
+      alt: 'A.Ü Ziraat Fakültesi, Mikrobiyoloji Binası - Ankara',
+      note: 'A.Ü Ziraat Fakültesi, Mikrobiyoloji Binası / Ankara'
     },
     {
       src: 'assets/carousel-images/project20.webp',
-      alt: 'Proje Dokümantasyonu 20',
-      note: 'Derz Onarım - Elazığ'
+      alt: 'Bilkent Üniversitesi Kampüsü, Bilkent Özel Lisesi - Ankara',
+      note: 'Bilkent Üniversitesi Kampüsü, Bilkent Özel Lisesi / Ankara'
     },
     {
       src: 'assets/carousel-images/project21.webp',
-      alt: 'Proje Dokümantasyonu 21',
-      note: 'Teras İzolasyon - Hatay'
+      alt: 'Bilkent Üniversitesi Kampüsü, Bilkent Özel Ortaokulu - Ankara',
+      note: 'Bilkent Üniversitesi Kampüsü, Bilkent Özel Ortaokulu / Ankara'
     },
     {
       src: 'assets/carousel-images/project22.webp',
-      alt: 'Proje Dokümantasyonu 22',
-      note: 'Çatı Yalıtım - Kahramanmaraş'
+      alt: 'Bilkent Üniversitesi Merkez Kampüsü, Lojman Blokları - Ankara',
+      note: 'Bilkent Üniversitesi Merkez Kampüsü, Lojman Blokları / Ankara'
     },
     {
       src: 'assets/carousel-images/project23.webp',
-      alt: 'Proje Dokümantasyonu 23',
-      note: 'Su İzolasyonu - Ordu'
+      alt: 'A.Ü Ziraat Fakültesi, Uçucu Yağlar Binası - Ankara',
+      note: 'A.Ü Ziraat Fakültesi, Uçucu Yağlar Binası / Ankara'
     },
     {
       src: 'assets/carousel-images/project24.webp',
-      alt: 'Proje Dokümantasyonu 24',
-      note: 'Akustik Çözüm - Rize'
+      alt: 'Bilkent Üniversitesi Doğu Kampüsü, Öğretim Üyeleri Lojmanları ve Kreş - Ankara',
+      note: 'Bilkent Üniversitesi Doğu Kampüsü, Öğretim Üyeleri Lojmanları ve Kreş / Ankara'
     },
     {
       src: 'assets/carousel-images/project25.webp',
-      alt: 'Proje Dokümantasyonu 25',
-      note: 'Temel Yalıtım - Artvin'
+      alt: 'Bilkent Üniversitesi Merkez Kampüsü, Öğrenci Yurtları - Ankara',
+      note: 'Bilkent Üniversitesi Merkez Kampüsü, Öğrenci Yurtları / Ankara'
     },
     {
       src: 'assets/carousel-images/project26.webp',
-      alt: 'Proje Dokümantasyonu 26',
-      note: 'Çatı Kaplama - Giresun'
+      alt: 'Bilkent Üniversitesi, Müzik Fakültesi - Ankara',
+      note: 'Bilkent Üniversitesi, Müzik Fakültesi / Ankara'
     },
     {
       src: 'assets/carousel-images/project27.webp',
-      alt: 'Proje Dokümantasyonu 27',
-      note: 'Mantolama - Bayburt'
+      alt: 'Bilkent Üniversitesi, Müzik Fakültesi Kafeterya - Ankara',
+      note: 'Bilkent Üniversitesi, Müzik Fakültesi Kafeterya / Ankara'
     },
     {
       src: 'assets/carousel-images/project28.webp',
-      alt: 'Proje Dokümantasyonu 28',
-      note: 'Zemin İzolasyon - Gümüşhane'
+      alt: 'Bilkent Üniversitesi, Müzik Fakültesi Giriş Holü - Ankara',
+      note: 'Bilkent Üniversitesi, Müzik Fakültesi Giriş Holü / Ankara'
     },
     {
       src: 'assets/carousel-images/project29.webp',
-      alt: 'Proje Dokümantasyonu 29',
-      note: 'Derz Dolgu - Tunceli'
+      alt: 'Bilkent Üniversitesi, Müzik Fakültesi Konser Salonu - Ankara',
+      note: 'Bilkent Üniversitesi, Müzik Fakültesi Konser Salonu / Ankara'
     },
     {
       src: 'assets/carousel-images/project30.webp',
-      alt: 'Proje Dokümantasyonu 30',
-      note: 'Isı Yalıtım - Bingöl'
+      alt: 'Milli Piyango İdaresi, Gölbaşı Sosyal Tesisleri - Ankara',
+      note: 'Milli Piyango İdaresi, Gölbaşı Sosyal Tesisleri / Ankara'
     },
     {
       src: 'assets/carousel-images/project31.webp',
-      alt: 'Proje Dokümantasyonu 31',
-      note: 'Ses İzolasyon - Muş'
+      alt: 'Çankaya Belediyesi, Ahlatlıbel Sosyal Tesisleri - Ankara',
+      note: 'Çankaya Belediyesi, Ahlatlıbel Sosyal Tesisleri / Ankara'
     },
     {
       src: 'assets/carousel-images/project32.webp',
-      alt: 'Proje Dokümantasyonu 32',
-      note: 'Teras Onarım - Bitlis'
+      alt: 'MNG Günal İnşaat, Ankara Hilton Oteli',
+      note: 'MNG Günal İnşaat, Ankara Hilton Oteli'
     },
     {
       src: 'assets/carousel-images/project33.webp',
-      alt: 'Proje Dokümantasyonu 33',
-      note: 'Çatı Yenileme - Siirt'
+      alt: 'TV8 Binası - Ankara',
+      note: 'TV8 Binası / Ankara'
     },
     {
       src: 'assets/carousel-images/project34.webp',
-      alt: 'Proje Dokümantasyonu 34',
-      note: 'Su Yalıtım - Şırnak'
+      alt: 'MNG Günal Ticaret Merkezi - Ankara',
+      note: 'MNG Günal Ticaret Merkezi / Ankara'
     }
   ];
   
