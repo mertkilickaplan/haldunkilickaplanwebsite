@@ -150,11 +150,6 @@ function initCarousel() {
       note: 'Milas Havaalanı'
     },
     {
-      src: 'assets/carousel-images/project9.webp',
-      alt: 'Hoca Ahmet Yesevi Üniversitesi - Kazakistan',
-      note: 'Hoca Ahmet Yesevi Üniversitesi / Kazakistan'
-    },
-    {
       src: 'assets/carousel-images/project10.webp',
       alt: 'FTZ Alışveriş Merkezi Havuzları - Keçiören, Ankara',
       note: 'FTZ Alışveriş Merkezi Havuzları / Keçiören, Ankara'
@@ -178,106 +173,6 @@ function initCarousel() {
       src: 'assets/carousel-images/project14.webp',
       alt: 'Tubitak Merkez Bina - Kavaklıdere, Ankara',
       note: 'Tubitak Merkez Bina / Kavaklıdere, Ankara'
-    },
-    {
-      src: 'assets/carousel-images/project15.webp',
-      alt: 'MNG İş Merkezi - Gop, Ankara',
-      note: 'MNG İş Merkezi / Gop, Ankara'
-    },
-    {
-      src: 'assets/carousel-images/project16.webp',
-      alt: 'MNG İş Merkezi - Gop, Ankara',
-      note: 'MNG İş Merkezi / Gop, Ankara'
-    },
-    {
-      src: 'assets/carousel-images/project17.webp',
-      alt: 'A.Ü Ziraat Fakültesi, Fermantasyon Teknolojileri Binası - Ankara',
-      note: 'A.Ü Ziraat Fakültesi, Fermantasyon Teknolojileri Binası / Ankara'
-    },
-    {
-      src: 'assets/carousel-images/project18.webp',
-      alt: 'A.Ü Ziraat Fakültesi, Et Mamülleri Binası - Ankara',
-      note: 'A.Ü Ziraat Fakültesi, Et Mamülleri Binası / Ankara'
-    },
-    {
-      src: 'assets/carousel-images/project19.webp',
-      alt: 'A.Ü Ziraat Fakültesi, Mikrobiyoloji Binası - Ankara',
-      note: 'A.Ü Ziraat Fakültesi, Mikrobiyoloji Binası / Ankara'
-    },
-    {
-      src: 'assets/carousel-images/project20.webp',
-      alt: 'Bilkent Üniversitesi Kampüsü, Bilkent Özel Lisesi - Ankara',
-      note: 'Bilkent Üniversitesi Kampüsü, Bilkent Özel Lisesi / Ankara'
-    },
-    {
-      src: 'assets/carousel-images/project21.webp',
-      alt: 'Bilkent Üniversitesi Kampüsü, Bilkent Özel Ortaokulu - Ankara',
-      note: 'Bilkent Üniversitesi Kampüsü, Bilkent Özel Ortaokulu / Ankara'
-    },
-    {
-      src: 'assets/carousel-images/project22.webp',
-      alt: 'Bilkent Üniversitesi Merkez Kampüsü, Lojman Blokları - Ankara',
-      note: 'Bilkent Üniversitesi Merkez Kampüsü, Lojman Blokları / Ankara'
-    },
-    {
-      src: 'assets/carousel-images/project23.webp',
-      alt: 'A.Ü Ziraat Fakültesi, Uçucu Yağlar Binası - Ankara',
-      note: 'A.Ü Ziraat Fakültesi, Uçucu Yağlar Binası / Ankara'
-    },
-    {
-      src: 'assets/carousel-images/project24.webp',
-      alt: 'Bilkent Üniversitesi Doğu Kampüsü, Öğretim Üyeleri Lojmanları ve Kreş - Ankara',
-      note: 'Bilkent Üniversitesi Doğu Kampüsü, Öğretim Üyeleri Lojmanları ve Kreş / Ankara'
-    },
-    {
-      src: 'assets/carousel-images/project25.webp',
-      alt: 'Bilkent Üniversitesi Merkez Kampüsü, Öğrenci Yurtları - Ankara',
-      note: 'Bilkent Üniversitesi Merkez Kampüsü, Öğrenci Yurtları / Ankara'
-    },
-    {
-      src: 'assets/carousel-images/project26.webp',
-      alt: 'Bilkent Üniversitesi, Müzik Fakültesi - Ankara',
-      note: 'Bilkent Üniversitesi, Müzik Fakültesi / Ankara'
-    },
-    {
-      src: 'assets/carousel-images/project27.webp',
-      alt: 'Bilkent Üniversitesi, Müzik Fakültesi Kafeterya - Ankara',
-      note: 'Bilkent Üniversitesi, Müzik Fakültesi Kafeterya / Ankara'
-    },
-    {
-      src: 'assets/carousel-images/project28.webp',
-      alt: 'Bilkent Üniversitesi, Müzik Fakültesi Giriş Holü - Ankara',
-      note: 'Bilkent Üniversitesi, Müzik Fakültesi Giriş Holü / Ankara'
-    },
-    {
-      src: 'assets/carousel-images/project29.webp',
-      alt: 'Bilkent Üniversitesi, Müzik Fakültesi Konser Salonu - Ankara',
-      note: 'Bilkent Üniversitesi, Müzik Fakültesi Konser Salonu / Ankara'
-    },
-    {
-      src: 'assets/carousel-images/project30.webp',
-      alt: 'Milli Piyango İdaresi, Gölbaşı Sosyal Tesisleri - Ankara',
-      note: 'Milli Piyango İdaresi, Gölbaşı Sosyal Tesisleri / Ankara'
-    },
-    {
-      src: 'assets/carousel-images/project31.webp',
-      alt: 'Çankaya Belediyesi, Ahlatlıbel Sosyal Tesisleri - Ankara',
-      note: 'Çankaya Belediyesi, Ahlatlıbel Sosyal Tesisleri / Ankara'
-    },
-    {
-      src: 'assets/carousel-images/project32.webp',
-      alt: 'MNG Günal İnşaat, Ankara Hilton Oteli',
-      note: 'MNG Günal İnşaat, Ankara Hilton Oteli'
-    },
-    {
-      src: 'assets/carousel-images/project33.webp',
-      alt: 'TV8 Binası - Ankara',
-      note: 'TV8 Binası / Ankara'
-    },
-    {
-      src: 'assets/carousel-images/project34.webp',
-      alt: 'MNG Günal Ticaret Merkezi - Ankara',
-      note: 'MNG Günal Ticaret Merkezi / Ankara'
     }
   ];
   
@@ -309,13 +204,13 @@ function initCarousel() {
     };
     
     img.onerror = function() {
-      // Görsel yüklenemezse placeholder kullan
-      this.src = placeholderImage;
-      console.log('Görsel yüklenemedi: ' + image.src);
+      // Görsel yüklenemezse slide'ı gizle
+      slide.style.display = 'none';
+      console.log('Görsel yüklenemedi ve slide gizlendi: ' + image.src);
     };
     
-    // Tüm görseller WebP formatında
-    img.src = image.src;
+    // Tüm görseller WebP formatında - cache busting ekle
+    img.src = image.src + '?v=' + Date.now();
     
     // Slide'ı tıklanabilir hale getir
     slide.addEventListener('click', function() {
@@ -480,8 +375,37 @@ function initCarousel() {
     }, { passive: true });
   }
   
+  // Yüklenemeyen görselleri temizle
+  function cleanupFailedImages() {
+    const slides = carouselTrack.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.carousel-dot');
+    let visibleSlides = [];
+    
+    slides.forEach((slide, index) => {
+      if (slide.style.display !== 'none') {
+        visibleSlides.push(index);
+      } else {
+        // Gizli slide'a karşılık gelen dot'u da gizle
+        if (dots[index]) {
+          dots[index].style.display = 'none';
+        }
+      }
+    });
+    
+    // Eğer mevcut slide gizli ise, görünür olan ilk slide'a git
+    if (slides[currentSlide] && slides[currentSlide].style.display === 'none') {
+      currentSlide = visibleSlides[0] || 0;
+      updateCarousel();
+    }
+  }
+  
   // İlk slide'ı göster
   updateCarousel();
+  
+  // Yüklenemeyen görseller için cleanup
+  setTimeout(() => {
+    cleanupFailedImages();
+  }, 2000);
   
   // Modal açma fonksiyonu
   window.openModal = function(imageSrc, imageAlt, imageNote) {
