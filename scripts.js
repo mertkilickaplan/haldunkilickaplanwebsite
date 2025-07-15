@@ -173,6 +173,61 @@ function initCarousel() {
       src: 'assets/carousel-images/project14.webp',
       alt: 'Tubitak Merkez Bina - Kavaklıdere, Ankara',
       note: 'Tubitak Merkez Bina / Kavaklıdere, Ankara'
+    },
+    {
+      src: 'assets/carousel-images/project15.webp',
+      alt: 'Proje 15 - İzolasyon Çalışması',
+      note: 'Proje 15 / İzolasyon ve Yalıtım Uygulaması'
+    },
+    {
+      src: 'assets/carousel-images/project16.webp',
+      alt: 'Proje 16 - İzolasyon Çalışması',
+      note: 'Proje 16 / İzolasyon ve Yalıtım Uygulaması'
+    },
+    {
+      src: 'assets/carousel-images/project17.webp',
+      alt: 'Proje 17 - İzolasyon Çalışması',
+      note: 'Proje 17 / İzolasyon ve Yalıtım Uygulaması'
+    },
+    {
+      src: 'assets/carousel-images/project18.webp',
+      alt: 'Proje 18 - İzolasyon Çalışması',
+      note: 'Proje 18 / İzolasyon ve Yalıtım Uygulaması'
+    },
+    {
+      src: 'assets/carousel-images/project19.webp',
+      alt: 'Proje 19 - İzolasyon Çalışması',
+      note: 'Proje 19 / İzolasyon ve Yalıtım Uygulaması'
+    },
+    {
+      src: 'assets/carousel-images/project20.webp',
+      alt: 'Proje 20 - İzolasyon Çalışması',
+      note: 'Proje 20 / İzolasyon ve Yalıtım Uygulaması'
+    },
+    {
+      src: 'assets/carousel-images/project21.webp',
+      alt: 'Proje 21 - İzolasyon Çalışması',
+      note: 'Proje 21 / İzolasyon ve Yalıtım Uygulaması'
+    },
+    {
+      src: 'assets/carousel-images/project22.webp',
+      alt: 'Proje 22 - İzolasyon Çalışması',
+      note: 'Proje 22 / İzolasyon ve Yalıtım Uygulaması'
+    },
+    {
+      src: 'assets/carousel-images/project23.webp',
+      alt: 'Proje 23 - İzolasyon Çalışması',
+      note: 'Proje 23 / İzolasyon ve Yalıtım Uygulaması'
+    },
+    {
+      src: 'assets/carousel-images/project24.webp',
+      alt: 'Proje 24 - İzolasyon Çalışması',
+      note: 'Proje 24 / İzolasyon ve Yalıtım Uygulaması'
+    },
+    {
+      src: 'assets/carousel-images/project25.webp',
+      alt: 'Proje 25 - İzolasyon Çalışması',
+      note: 'Proje 25 / İzolasyon ve Yalıtım Uygulaması'
     }
   ];
   
