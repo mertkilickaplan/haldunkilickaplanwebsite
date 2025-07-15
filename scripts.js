@@ -176,58 +176,58 @@ function initCarousel() {
     },
     {
       src: 'assets/carousel-images/project15.webp',
-      alt: 'Proje 15 - İzolasyon Çalışması',
-      note: 'Proje 15 / İzolasyon ve Yalıtım Uygulaması'
+      alt: 'TML Libya İzolasyon Projesi',
+      note: 'TML / Libya, İzolasyon'
     },
     {
       src: 'assets/carousel-images/project16.webp',
-      alt: 'Proje 16 - İzolasyon Çalışması',
-      note: 'Proje 16 / İzolasyon ve Yalıtım Uygulaması'
+      alt: 'TML Libya İzolasyon Projesi',
+      note: 'TML / Libya, İzolasyon'
     },
     {
       src: 'assets/carousel-images/project17.webp',
-      alt: 'Proje 17 - İzolasyon Çalışması',
-      note: 'Proje 17 / İzolasyon ve Yalıtım Uygulaması'
+      alt: 'TML Libya İnce İşler Projesi',
+      note: 'TML / Libya, İnce işler'
     },
     {
       src: 'assets/carousel-images/project18.webp',
-      alt: 'Proje 18 - İzolasyon Çalışması',
-      note: 'Proje 18 / İzolasyon ve Yalıtım Uygulaması'
+      alt: 'TML Libya İnce İşler Projesi',
+      note: 'TML / Libya, İnce işler'
     },
     {
       src: 'assets/carousel-images/project19.webp',
-      alt: 'Proje 19 - İzolasyon Çalışması',
-      note: 'Proje 19 / İzolasyon ve Yalıtım Uygulaması'
+      alt: 'TML Libya İnce İşler Projesi',
+      note: 'TML / Libya, İnce işler'
     },
     {
       src: 'assets/carousel-images/project20.webp',
-      alt: 'Proje 20 - İzolasyon Çalışması',
-      note: 'Proje 20 / İzolasyon ve Yalıtım Uygulaması'
+      alt: 'TML Libya El Bayda Projesi',
+      note: 'TML / Libya, El Bayda'
     },
     {
       src: 'assets/carousel-images/project21.webp',
-      alt: 'Proje 21 - İzolasyon Çalışması',
-      note: 'Proje 21 / İzolasyon ve Yalıtım Uygulaması'
+      alt: 'TML Libya El Bayda Projesi',
+      note: 'TML / Libya, El Bayda'
     },
     {
       src: 'assets/carousel-images/project22.webp',
-      alt: 'Proje 22 - İzolasyon Çalışması',
-      note: 'Proje 22 / İzolasyon ve Yalıtım Uygulaması'
+      alt: 'TML Libya El Bayda Projesi',
+      note: 'TML / Libya, El Bayda'
     },
     {
       src: 'assets/carousel-images/project23.webp',
-      alt: 'Proje 23 - İzolasyon Çalışması',
-      note: 'Proje 23 / İzolasyon ve Yalıtım Uygulaması'
+      alt: 'Taşyapı Mashattan İstanbul Projesi',
+      note: 'Taşyapı, Mashattan / İstanbul'
     },
     {
       src: 'assets/carousel-images/project24.webp',
-      alt: 'Proje 24 - İzolasyon Çalışması',
-      note: 'Proje 24 / İzolasyon ve Yalıtım Uygulaması'
+      alt: 'Taşyapı Mashattan İstanbul Projesi',
+      note: 'Taşyapı, Mashattan / İstanbul'
     },
     {
       src: 'assets/carousel-images/project25.webp',
-      alt: 'Proje 25 - İzolasyon Çalışması',
-      note: 'Proje 25 / İzolasyon ve Yalıtım Uygulaması'
+      alt: 'İbadullah Camii Tatvan Projesi',
+      note: 'İbadullah Camii / Tatvan'
     }
   ];
   
