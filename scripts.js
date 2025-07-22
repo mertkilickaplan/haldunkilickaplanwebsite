@@ -57,8 +57,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
       if (!isValid) {
         e.preventDefault(); // Only prevent submission when validation fails
+      } else {
+        // Form is valid, track conversion event before submission
+        if (typeof gtag === 'function') {
+          e.preventDefault(); // Prevent default form submission
+          
+          // Send conversion event to Google Analytics
+          gtag('event', 'form_submission', {
+            'event_category': 'Contact',
+            'event_label': 'Contact Form',
+            'event_callback': function() {
+              // Submit the form after tracking is complete
+              contactForm.submit();
+            },
+            'event_timeout': 2000 // 2 seconds timeout
+          });
+          
+          return false;
+        }
+        // If gtag is not available, allow default form submit to Formspree
       }
-      // If isValid remains true, allow default form submit to Formspree
     });
   }
   

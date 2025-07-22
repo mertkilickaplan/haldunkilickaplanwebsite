@@ -78,6 +78,25 @@
 
     gtag('config', 'G-09L24HFNQD');
   </script>
+  
+  <!-- Google tag (gtag.js) event - delayed navigation helper -->
+  <script>
+    // Helper function to delay opening a URL until a gtag event is sent.
+    // Call it in response to an action that should navigate to a URL.
+    function gtagSendEvent(url) {
+      var callback = function () {
+        if (typeof url === 'string') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'ads_conversion_PAGE_VIEW_1', {
+        'event_callback': callback,
+        'event_timeout': 2000,
+        // <event_parameters>
+      });
+      return false;
+    }
+  </script>
 
   <script type="application/ld+json">
   {
@@ -219,7 +238,7 @@
         </div>
         
         <div class="hero-button">
-          <a href="/#contact" class="btn-logo">İLETİŞİME GEÇ</a>
+          <a href="/#contact" class="btn-logo" onclick="return gtagSendEvent('/#contact');">İLETİŞİME GEÇ</a>
         </div>
       </div>
     </div>
@@ -574,7 +593,7 @@
   <section id="contact">
     <h2>İletişim</h2>
     <div class="call-button-container">
-      <a href="tel:+905338100806" class="btn-call">
+      <a href="tel:+905338100806" class="btn-call" onclick="if(typeof gtag === 'function') gtag('event', 'phone_call', {'event_category': 'Contact', 'event_label': 'Call Button'});">
         <span class="btn-call-icon" aria-hidden="true">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;margin-right:8px;" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 3.5A2 2 0 0 1 4.5 1.5h2A2 2 0 0 1 8.5 3.5v1A2 2 0 0 1 7.5 6.5l-.5.5a13.5 13.5 0 0 0 6 6l.5-.5a2 2 0 0 1 2-1h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2A15.5 15.5 0 0 1 2.5 3.5z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </span>
