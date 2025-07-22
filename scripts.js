@@ -529,12 +529,10 @@ function initCarousel() {
       closeButton.focus();
     }
     
-    // Google Analytics event (eğer varsa)
+    // Google Analytics görsel görüntüleme olayı
     if (typeof gtag !== 'undefined') {
       gtag('event', 'image_view', {
-        event_category: 'Gallery',
-        event_label: imageAlt || 'Proje Görseli',
-        value: 1
+        // <event_parameters>
       });
     }
   };
